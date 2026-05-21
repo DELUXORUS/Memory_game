@@ -1,0 +1,23 @@
+# Запускайте из корня репозитория: cd <корень> && doxygen Doxyfile
+PROJECT_NAME           = "Игра на память TCP"
+PROJECT_BRIEF          = "TCP-сервер и клиент на C++ для игры на память."
+OUTPUT_DIRECTORY       = docs
+CREATE_SUBDIRS         = YES
+OUTPUT_LANGUAGE        = Russian
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+GENERATE_TREEVIEW      = YES
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+QUIET                  = NO
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+HAVE_DOT               = NO
+INPUT                  = mainpage.dox PROTOCOL.md src
+FILE_PATTERNS          = *.cpp *.hpp *.dox *.md
+RECURSIVE              = YES
+FULL_PATH_NAMES        = NO
+INLINE_SOURCES         = YES
+STRIP_FROM_PATH        = .
